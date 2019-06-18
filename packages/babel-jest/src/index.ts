@@ -69,7 +69,7 @@ const createTransformer = (
       fileData,
       filename,
       configString,
-      {config, instrument, rootDir},
+      {config = {}, instrument, rootDir},
     ) {
       const babelOptions = loadBabelConfig(config.cwd, filename);
       const configPath = [
